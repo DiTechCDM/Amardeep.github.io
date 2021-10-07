@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --nav-menus: calc(10pt + 0.15vw);
+    --h1: calc(32pt + 0.15vw);
+    --h2: calc(20pt + 0.15vw);
+    --h3: calc(18pt + 0.15vw);
+    --para: calc(14pt + 0.15vw);
+    --para-1: calc(11pt + 0.15vw);
+    --nav-menus-re: calc(8pt + 0.15vw)
+}
+
+/* font family */
+
+@font-face {
+    font-family: circularXX__Regular;
+    src: url('../Fonts/CircularXX/CircularXX-Regular.woff');
+}
+
+@font-face {
+    font-family: circularXX__Light;
+    src: url('../Fonts/CircularXX/CircularXX-Light.woff');
+}
+
+@font-face {
+    font-family: Ubuntu__Medium;
+    src: url('../Fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu__Regular;
+    src: url('../Fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+/* font family ends here */
+
+/* header part starts here */
+
+.details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 3px 15px 3px 15px;
+    background-color: #4e6aa4;
+    z-index: 9999;
+}
+
+header p {
+    margin-bottom: 0.20rem;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+    font-family: 'circularXX__Regular';
+}
+
+header .gap-sm {
+    margin-left: 1.5rem;
+}
+
+header p .br {
+    content: "";
+    display: none;
+}
+
+.svg-icon {
+    width: 20px;
+    color: white;
+}
+
+/* header part ends here */
+
+/* Navbar starts here */
+
+.navbar-expand-lg {
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 32px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 100rem;
+    z-index: 9999;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    letter-spacing: 0.03em;
+    font-size: var(--nav-menus);
+    text-transform: uppercase;
+    color: #4e6aa4;
+    font-family: 'Ubuntu__Regular';
+    letter-spacing: 0.03em;
+}
+
+.navbar-brand img {
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.Wrapper {
+    padding: 0px 50px 0px 50px;
+}
+
+.navbar-expand-lg ul li {
+    padding: 0px 10px 0px 10px;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #4e6aa4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    background-color: white;
+    color: black;
+    border: 1px solid #4e6aa4;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.nav-link span {
+    display: inline-block;
+}
+
+.nav-link span:after {
+    content: '';
+    width: 0px;
+    height: 2.50px;
+    display: block;
+    background: #4e6aa4;
+    transition: 300ms;
+}
+
+.nav-link span:hover:after {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .Wrapper {
+        padding: 0px 15px 0px 15px;
+    }
+    .navbar-expand-lg ul li {
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    header .gap-sm {
+        margin-left: 0rem;
+    }
+}
+
+/* Navbar ends here */
+
+/* Banner starts here */
+
+.steel-banner-section {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.7) 45%, rgba(255, 255, 255, 0) 60%), url('../Assets/Hero-Banner.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* 1 of 2 col starts here */
+
+.side-row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 140px 0px 140px;
+}
+
+.steel-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.steel-col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 30px 25px 30px 25px;
+}
+
+.text-col {
+    height: auto;
+}
+
+.text-col h1 {
+    font-size: var(--h1);
+    font-family: 'Ubuntu__Medium';
+    letter-spacing: 0.03em;
+    line-height: 1.2195;
+    color: #4e6aa4;
+}
+
+.text-col p {
+    font-size: var(--para);
+    font-family: 'circularXX__Regular';
+    letter-spacing: 0.03em;
+    line-height: 1.4195;
+    padding: 0px 25px 0px 0px;
+}
+
+.text-col button {
+    border: none;
+    background-color: #4e6aa4;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: var(--nav-menus);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: 'Ubuntu__Regular';
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.text-col button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.text-col button:hover {
+    padding-right: 34px;
+    padding-left: 24px;
+}
+
+.text-col button:hover:after {
+    opacity: 1;
+    right: 12px;
+}
+
+.form-col {
+    height: auto;
+}
+
+.contact-form input {
+    width: 100%;
+    border-width: 2px;
+    border-color: #8094ba;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #999;
+    padding: 11px;
+    border: 2px solid #4e6ba489;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    .steel-row {
+        flex-direction: column;
+    }
+    .side-row {
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+/* form starts here */
+
+.contact-form h3 {
+    font-size: var(--h3);
+    font-family: 'Ubuntu__Medium';
+    letter-spacing: 0.03em;
+}
+
+.contact-form {
+    max-width: 66.33%;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(17.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-form button {
+    border: none;
+    background-color: #4e6aa4;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    font-size: var(--nav-menus);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: 'circularXX__Regular';
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+.contact-form button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.contact-form button:hover {
+    padding-right: 34px;
+    padding-left: 24px;
+}
+
+.contact-form button:hover:after {
+    opacity: 1;
+    right: 12px;
+}
+
+@media screen and (max-width: 1080px) {
+    .contact-form {
+        margin: initial;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .text-col h1 {
+        font-size: calc(24pt + 0.15vw);
+    }
+    .text-col p {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .text-col {
+        margin-top: 25rem;
+    }
+    .steel-col {
+        margin: 30px 0px 30px 0px;
+    }
+    .contact-form {
+        max-width: 100%;
+        margin: auto;
+    }
+    header p a {
+        font-size: var(--nav-menus-re);
+    }
+}
+
+/* form ends here */
+
+/* 1 of 2 col ends here */
+
+/* Banner ends here */
+
+/* about amardeep starts here */
+
+.about-amardeep {
+    background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.83) 100%), url('../Assets/fabricated-steel-workshop.jpg')!important;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about-amardeep .ion-icon {
+    position: absolute;
+    bottom: -95px;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    color: #4e6aa4;
+}
+
+/* 1 of 2 col starts here */
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+}
+
+.about-col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 0px 40px 0px 40px;
+}
+
+.img-col {
+    height: auto;
+}
+
+.img-col img {
+    width: 100%;
+}
+
+.about-text-col {
+    height: auto;
+}
+
+.about-text-col h2 {
+    font-size: var(--h2);
+    font-family: 'Ubuntu__Medium';
+    letter-spacing: 0.03em;
+}
+
+.about-text-col h3 {
+    font-size: var(--h3);
+    font-family: 'Ubuntu__Medium';
+    letter-spacing: 0.03em;
+}
+
+.about-text-col p {
+    font-size: var(--para-1);
+    font-family: 'circularXX__Light';
+    letter-spacing: 0.03em;
+    line-height: 1.2195;
+}
+
+.about-amardeep {
+    border-bottom: 40px solid #4e6aa4;
+}
+
+@media screen and (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+    }
+    .img-col img {
+        margin-bottom: 4rem;
+    }
+    .about-col {
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .img-col img {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .about-row {
+        margin-top: 12rem;
+    }
+    .about-text-col h2 {
+        font-size: calc(18pt + 0.15vw);
+    }
+    .about-text-col h3 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .about-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-row {
+        margin-top: 0rem;
+    }
+}
+
+/* 1 of 2 col ends here */
+
+/* about amardeep ends here */
+
+/* our product amardeep starts here */
+
+.product-amardeep {
+    padding: 60px 60px 60px 60px;
+    background-color: #e2e2e2;
+}
+
+.product-amardeep h2 span {
+    border-bottom: 3px solid #4e6aa4;
+    padding-bottom: 1.30rem;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+}
+
+.grid-main>.grid-low {
+    height: auto;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.grid-main>.grid-low:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.Img-place {
+    max-width: 70%;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1rem;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Img-place img {
+    max-width: 100%;
+    transition: all 0.5s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.Img-place:hover img {
+    transform: scale(1.1);
+}
+
+.grid-main>.grid-low img {
+    width: 180px;
+}
+
+/* button starts here */
+
+.product-amardeep button {
+    border: none;
+    background-color: #ffff;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+    font-size: var(--nav-menus);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: 'Ubuntu__Regular';
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.product-amardeep button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.product-amardeep button:hover {
+    padding-right: 34px;
+    padding-left: 24px;
+    background-color: #4e6aa4;
+    color: white;
+}
+
+.product-amardeep button:hover:after {
+    opacity: 1;
+    right: 12px;
+}
+
+.Img-place p {
+    margin-bottom: 0rem;
+    text-align: center;
+    font-family: 'circularXX__Light';
+    letter-spacing: 0.03em;
+    font-size: var(--para-1);
+}
+
+/* button ends here */
+
+@media screen and (max-width: 1080px) {
+    .grid-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .grid-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-amardeep {
+        padding: 60px 10px 60px 10px;
+    }
+    .Img-place {
+        max-width: 55%;
+    }
+    .product-amardeep h2 {
+        font-size: calc(18pt + 0.15vw);
+    }
+}
+
+/* our product amardeep ends here */
+
+/* why us starts here */
+
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+
+.progressbar {
+    display: inline-block;
+    width: 100px;
+    margin: 25px;
+}
+
+.circle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.circle canvas {
+    vertical-align: middle;
+}
+
+.circle div {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
+
+/* why us ends here */
