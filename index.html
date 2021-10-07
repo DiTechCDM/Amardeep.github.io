@@ -20,6 +20,8 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
     <title>Amardeep</title>
 </head>
 
@@ -248,9 +250,29 @@
     <!-- our product section ends here -->
 
     <!-- why us section starts here -->
-    <section>
-        <div class="container-fluid">
-           
+    <section class="why-us-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Us?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-low">
+                    <div class="percent" style="width:160px;height:160px;">
+                        <p style="display:none;">100%</p>
+                        <span class='numscroller' data-min='1' data-max='700' data-delay='5' data-increment='2'></span>
+                    </div>
+                </div>
+                <div class="why-us-low">
+                    <div class="percent" style="width:160px;height:160px;">
+                        <p style="display:none;">100%</p>
+                        <span class='numscroller' data-min='1' data-max='200' data-delay='5' data-increment='2'></span>
+                    </div>
+                </div>
+                <div class="why-us-low">
+                    <div class="percent last-ion" style="width:160px;height:160px;">
+                        <p style="display:none;">25%</p>
+                        <span class='numscroller' data-min='1' data-max='25' data-delay='5' data-increment='2'></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- why us section ends here -->
@@ -272,7 +294,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="./JS/circleprogressbar.js"></script>
+    <script src="./JS/pecent.js"></script>
+    <script src="./JS/progressbar.js"></script>
 
 </body>
 
