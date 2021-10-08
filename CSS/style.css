@@ -1034,6 +1034,9 @@ text {
     border: none;
     background-color: #eee;
     padding: 12px 10px 12px 10px;
+    font-size: var(--para-1);
+    font-family: 'circularXX__Light';
+    letter-spacing: 0.03em;
 }
 
 .form-width-lg textarea {
@@ -1042,6 +1045,9 @@ text {
     border: none;
     background-color: #eee;
     padding: 12px 10px 12px 10px;
+    font-size: var(--para-1);
+        letter-spacing: 0.03em;
+        letter-spacing: 0.03em;
 }
 
 /* button starts here */
