@@ -455,8 +455,8 @@ header p .br {
 /* about amardeep starts here */
 
 .about-amardeep {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0.83))), url('../Assets/fabricated-steel-workshop.jpg')!important;
     background-image: -o-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0.83) 100%), url('../Assets/fabricated-steel-workshop.jpg')!important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0.83))), url('../Assets/fabricated-steel-workshop.jpg')!important;
     background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.83) 100%), url('../Assets/fabricated-steel-workshop.jpg')!important;
     background-size: cover;
     width: 100%;
@@ -848,3 +848,52 @@ text {
 }
 
 /* why us ends here */
+
+/* our client starts here */
+
+.our-client-section {
+    background-image: url('https://kalpatarupiping.com/wp-content/uploads/2020/11/17580-scaled_002082bf1d82855c803d124b6c5d4ebc-1.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+.our-client-section h2 {
+    font-size: var(--h2);
+    font-family: 'Ubuntu__Medium';
+    letter-spacing: 0.03em;
+}
+
+.owl-carousel .owl-item .owl-icon {
+    width: 70% !important;
+    height: 180px;
+}
+
+.owl-carousel .owl-item .owl-icon-1 {
+    width: 70% !important;
+    height: 130px;
+}
+
+@media screen and (max-width: 1080px) {
+    .owl-carousel .owl-item .owl-icon {
+        width: 60% !important;
+        height: 130px;
+    }
+    .owl-carousel .owl-item .owl-icon-1 {
+        width: 60% !important;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .owl-carousel .owl-item .owl-icon {
+        width: 80% !important;
+        height: 150px;
+    }
+    .owl-carousel .owl-item .owl-icon-1 {
+        width: 80% !important;
+        height: 110px;
+    }
+}
+
+/* our client ends here */
