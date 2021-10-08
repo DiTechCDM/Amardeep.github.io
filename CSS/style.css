@@ -1046,8 +1046,8 @@ text {
     background-color: #eee;
     padding: 12px 10px 12px 10px;
     font-size: var(--para-1);
-        letter-spacing: 0.03em;
-        letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
+    font-family: 'circularXX__Light';
 }
 
 /* button starts here */
