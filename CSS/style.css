@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body,html {
+body, html {
     overflow-x: hidden;
 }
 
@@ -316,6 +316,7 @@ header p .br {
 }
 
 .contact-form input {
+    outline: none;
     width: 100%;
     border-width: 2px;
     border-color: #8094ba;
